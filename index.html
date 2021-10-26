@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina.css">
+    <!-- Título da página (aparece na aba) -->
+    <title>Currículo Online</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="Titulo">Currículo online</h1>
+        <p id="Subtitulo">Preencha suas informações</p>
+        <br>
+    </div>
+    <form>
+        <!-- Início do formulário com dados pessoais -->
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"> <strong> Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div> <br>
+            <div>
+                <labe for="sobrenome"><strong> Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+            </div><br>
+            <div>
+                <labe for="telefone"> <strong>telefone:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+            </div> <br>
+            <div>
+                <labe for="endereço"><strong> Endereço:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+            </div><br>
+            <div>
+                <label for="email"><strong> Email:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div> <br>
+            <!-- Campo de sexo com opções para escolha (select option) -->
+            <label> <strong>Sexo:</strong></label> <br> <br>
+            <select id="Senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </fieldset>
+
+        </div>
+        <div class="campo"> <br>
+            <!-- Campo de estado empregatício com opções para escolha (select option) -->
+            <label> <strong>Qual seu estado no momento:</strong> </label> <br>
+            <label>
+                <input type="radio" name="estado" volue="estado" checked> Empregado
+            </label> <br>
+            <label>
+                <input type="radio" name="estado" volue="estado"> A procura de emprego
+            </label>
+
+        </div><br>
+        <!-- Campo de escolaridade com opções para escolha (select option) -->
+        <div class="campo">
+            <label> <strong>Escolaridade:</strong> </label> <br>
+            <select id="Senioridade"> <br>
+                <option selected disabled value="">Selecione</option>
+                <option>Ensino Fundamental completo</option>
+                <option>Ensino médio completo</option>
+                <option>Superior cursando</option>
+                <option>Superior completo</option>
+                <option>Pós-graduação</option>
+
+            </select> <br>
+            <!-- Campo de instituição de ensino e nivel, com  opções para escolha (select option) -->
+            <label> <strong>Instiuição:</strong> </label> </br>
+            <input type="Instiuição" name="Instiuição" id="Instiuição"> <br> <br>
+            <label> <strong>Curso:</strong> </label>
+            <input type="Curso" name="Curso" id=Curso">
+            <div class="campo"><br>
+                <!-- Campo linguas com  opções de idiomas e nível, para escolha (select option) -->
+                <label> <strong>Idiomas:</strong></label> <br>
+                <select id="Senioridade">
+                    <option selected disabled value="">Selecione</option> <br>
+                    <option>Inglês</option>
+                    <option> Espanhou</option>
+                    <option> Francês</option>
+                    <label>Nivel</label>
+                    <label>
+                        <input type="radio" name="idioma" volue="idioma" checked> Básico
+                    </label>
+                    <label>
+                        <input type="radio" name="idioma" volue="idioma"> intermediario
+                    </label>
+                    <label>
+                        <input type="radio" name="idioma" volue="idioma"> Avançado
+                    </label>
+                </select>
+
+            </div>
+        </div>
+        <!-- Campo de experiência com  opções para escolha (select option) -->
+        <div class="campo"> <br>
+            <label> <strong> Ultima experiência profissional:</strong> </label> <br>
+            <label for="endereço"><strong> Empresa:</strong> </label>
+            <input type="text" name="Empresa01" id="Empresa01" required>
+            <select id="empresa"> <br>
+                <option selected disabled value="">Tempo de empresa</option> <br>
+                <option>Menos de 1 ano</option>
+                <option>Mais de 1 ano</option>
+                <option>Emprego atual</option>
+                </label>
+            </select>
+        </div>
+        <br>
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label> <strong> <strong>Atividades executadas:</strong> </strong> </label> <br>
+            <textarea name="experiência" style="width: 26em;" id="experiência" rows="6"></textarea>
+        </div>
+        <button type="submit"> <strong>Adicionar</strong> </button>
+        <br> <br>
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label> <strong>Selecione as tecnologias que tem experiência:</strong> </label><br> <br>
+                <input type="checkbox" id="Tecnologia1" name="Tecnologia1" volue="Excel">
+                <label for="tecnologia1">Excel </label>
+                <input type="checkbox" id="Tecnologia2" name="Tecnologia2" volue="SAP">
+                <label for="tecnologia2">SAP</label>
+                <input type="checkbox" id="Tecnologia3" name="Tecnologia3" volue="Word">
+                <label for="tecnologia3">Word</label>
+                <input type="checkbox" id="Tecnologia4" name="Tecnologia4" volue="Power BI">
+                <label for="tecnologia4">Power Bi</label>
+                <input type="checkbox" id="Tecnologia5" name="Tecnologia4" volue="Outras">
+                <label for="tecnologia4">Outras</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <!-- Caixa de texto -->
+            <label> <strong> Quais são os seus objetivos dentro de uma empresa:</strong> </label> <br>
+            <textarea name="experiência" style="width: 26em;" id="experiência" rows="6"></textarea>
+        </div> <br>
+        <!-- Botão para enviar o currÍculo -->
+        <button class="botao" type="submit">Concluido</button>
+    </form>
+
+</body>
+
+</html>
